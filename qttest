@@ -1,0 +1,13 @@
+with open('E:\PyScripts\paper.txt', 'rb') as f:
+    raw_b = f.read()
+    raw_text = raw_b.decode('utf-8')
+    #print(raw_text.encode('utf-8'))
+    length = len(raw_text)
+    new_text = raw_text.replace('.\r\n', '.\n ').replace('\r\n', ' ').replace('  ', '\n').replace('•', '\n•').replace('','fi')
+    print(new_text)
+
+
+
+
+
+
